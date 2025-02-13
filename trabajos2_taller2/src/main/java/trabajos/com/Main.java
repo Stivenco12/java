@@ -1,6 +1,5 @@
 package trabajos.com;
 import java.util.Scanner;
-import java.util.Random;
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) { 
@@ -13,93 +12,21 @@ public class Main {
                 System.out.println("Ejercicio 5 = Estructura repetitivas (for)");
                 System.out.println("Ejercicio 6 = Tabalas de multiplicar con while");
                 System.out.println("Ejercicio 7 = Adivina el numero (Ramdon)");
+                System.out.println("Ejercicio 8 = Subcadena");
                 System.out.println("Ejercicio 9 = Generar la tabla de Amortizacion de un prestamo Bancario");
                 menu = sc.nextLine();
                 switch (menu) { 
-                    case "1":
-                        System.out.println("hola java!");
-                        System.out.println("");
-                        break;
-                    case "2":
-                        int Nm0 = 10;
-                        double Nm1 = 1.0;
-                        char Nm2 = 127;
-                        boolean Nm3 = true;
-                        System.out.println("Valor int ="+Nm0+"\nValor double = "+Nm1+"\nValor char = "+Nm2+"\nValor boolean = "+Nm3);
-                        System.out.println("");
-                        break;
-                    case "3":
-                        String nombre;
-                        int edad;
-                        System.out.println("por favor ingrese su nombre");
-                        nombre = sc.nextLine();
-                        System.out.println("por favor ingrese su edad");
-                        edad = sc.nextInt();
-                        System.out.println("Su nombre es "+nombre+" y su edad es de "+edad);
-                        System.out.println("");
-                        break;
-                    case "4":
-                        int entero;
-                        System.out.println("ingrese un numero entero = ");
-                        entero = sc.nextInt();
-                        if (entero % 2 == 0) {
-                            System.out.println("es un numero es par");
-                        }else{
-                            System.out.println("no es un numero par");
-                        }
-                        break;
-                    case "5":
-                        for(int i = 1; i <= 10; i++){
-                            System.out.println("numero: "+ i);
-                        }
-                        break;
-                    case "6":
-                        int number1;
-                        int number2;
-                        int number3;
-                        System.out.println("ingrese un numero = ");
-                        number1 = sc.nextInt();
-                        System.out.println();
-                        int i = 0;
-                        while (i < 11) {
-                            number2 = number1 * i++;
-                            number3 = i- 1;
-                            System.out.println(+number1+" X "+number3+" = "+number2);
-                        }
-                        break;
-                    case "7":
-                        System.out.println("adivinar el numero del 0 al 100");
-                        Random random = new Random();
-                        int intAletorio = random.nextInt(101);
-                        int numero0;
-                        System.out.println("ingresa un numero del 0 al 100");
-                        numero0 = sc.nextInt();
-                        if (numero0 == intAletorio) {
-                            System.out.println("ganastes el numero que salio fue "+intAletorio+" y el numero que elegistes es "+numero0);
-                        }else{
-                            System.out.println("perdistes el numero que salio fue "+intAletorio+" y el numero que elegistes es "+numero0);
-                        }
-                        System.out.println();
-                        break;
-                    case "9":
-                        double p;
-                        double interes;
-                        double plazo;
-                        double c;
-                        double r;
-                        double n;
-                        p = sc.nextInt();
-                        interes = sc.nextInt();
-                        plazo = sc.nextInt();
-                        r=((interes)/(12*100));
-                        System.out.println(r);
-                        n = plazo*12;
-                        c=((p*r)/(1-(1*r)*(-n)));
-                        System.out.println(c/2);
-                        
-                        break;
+                    case "1" -> Case1.case1();
+                    case "2" -> Case2.case2();
+                    case "3" -> Case3.case3();
+                    case "4" -> Case4.case4();
+                    case "5" -> Case5.case5();
+                    case "6" -> Case6.case6();
+                    case "7" -> Case7.case7();
+                    case "8" -> Case8.case8();
+                    case "9" -> Case9.case9();
                 }
-            }while(!menu.equals("18"));
+            }while(!menu.equals("11"));
         }
     }
 }
