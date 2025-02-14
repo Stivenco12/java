@@ -1,17 +1,7 @@
 package trabajos.com;
 import java.util.Scanner;
 import trabajos.com.Cases.Menu;
-import trabajos.com.Cases.Case1;
-import trabajos.com.Cases.Case2;
-import trabajos.com.Cases.Case3;
-import trabajos.com.Cases.Case4;
-import trabajos.com.Cases.Case5;
-import trabajos.com.Cases.Case6;
-import trabajos.com.Cases.Case7;
-import trabajos.com.Cases.Case8;
-import trabajos.com.Cases.Case9;
-import trabajos.com.Cases.Case10;
-import trabajos.com.Cases.Case11;
+import trabajos.com.Cases.*;
 public class Main {
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) { 

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Case3 {
         public static int case3() {
+            @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in);
             int case3 = 0;
             System.out.print("por favor ingrese su nombre = ");

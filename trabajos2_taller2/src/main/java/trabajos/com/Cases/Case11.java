@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Case11 {
     public static int case11() {
         int case11 = 0;
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el saldo inicial de la cuenta = ");
         double saldo = sc.nextDouble();

@@ -4,6 +4,7 @@ import java.util.Scanner;
 
 public class Case8 {
     public static int case8() {
+        @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in);
                 int limite = 100;
                 int start ;

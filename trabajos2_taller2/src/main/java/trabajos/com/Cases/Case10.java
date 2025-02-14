@@ -4,6 +4,7 @@ import java.util.Scanner;
 public class Case10 {
     public static int case10() {
         int case10 = 0;
+        @SuppressWarnings("resource")
         Scanner sc = new Scanner(System.in);
         System.out.print("Ingrese el monto inicial de inversión = ");
         double P = sc.nextDouble();

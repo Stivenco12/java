@@ -1,5 +1,4 @@
 package trabajos.com.Cases;
-
 public class Menu {
     public static int menu() {
         int menu = 0;  

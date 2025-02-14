@@ -2,6 +2,7 @@ package trabajos.com.Cases;
 import java.util.Scanner;
 public class Case6{
         public static int case6() {
+            @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in); 
                 int number1;
                 int number2;

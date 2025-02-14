@@ -3,6 +3,7 @@ import java.util.Random;
 import java.util.Scanner;
 public class Case7{
         public static int case7() {
+            @SuppressWarnings("resource")
             Scanner sc = new Scanner(System.in); 
                 System.out.println("adivinar el numero del 0 al 100");
                 Random random = new Random();
