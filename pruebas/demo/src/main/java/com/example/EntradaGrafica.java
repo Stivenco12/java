@@ -3,35 +3,37 @@ import javax.swing.*;
 
 public class EntradaGrafica {
     public static void main(String[] args) {
-        // Crear una ventana
+  
         JFrame frame = new JFrame("Entrada de Datos");
 
-        // Crear una etiqueta
-        JLabel label = new JLabel("Ingresa tu nombre:");
+        JLabel label1 = new JLabel("Ingresa un numero:");
 
-        // Crear un campo de texto (JTextField) para que el usuario ingrese su nombre
-        JTextField textField = new JTextField(20);  // 20 es el tamaño del campo
+        JTextField numer1 = new JTextField(30);  
 
-        // Crear un botón para procesar la entrada
-        JButton button = new JButton("Mostrar Saludo");
+        JLabel label2 = new JLabel("Ingresa otro numero:");
 
-        // Acción del botón
+        JTextField numer2 = new JTextField(30);  
+
+        JButton button = new JButton("Suma los numeros");
+
         button.addActionListener(e -> {
-            // Obtener el texto ingresado por el usuario en el JTextField
-            String nombre = textField.getText();
-            // Mostrar un saludo en un mensaje emergente
-            JOptionPane.showMessageDialog(frame, "¡Hola, " + nombre + "!");
+             
+            double num1 = Integer.parseInt(numer1.getText());
+            double num2 = Integer.parseInt(numer2.getText());
+            double num3 = num1 / num2;
+            JOptionPane.showMessageDialog(frame, "la suma es = " + num3 );
+            
+            
         });
-
-        // Crear un panel para agregar los componentes
         JPanel panel = new JPanel();
-        panel.add(label);
-        panel.add(textField);
+        panel.add(label1);
+        panel.add(numer1);
+        panel.add(label2);
+        panel.add(numer2);
         panel.add(button);
-
-        // Configurar la ventana
+        
         frame.add(panel);
-        frame.setSize(300, 150);
+        frame.setSize(400, 200);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setVisible(true);
     }
